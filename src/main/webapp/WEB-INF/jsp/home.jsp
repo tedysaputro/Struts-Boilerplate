@@ -1,4 +1,7 @@
-<html>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="sb" uri="/struts-bootstrap-tags" %>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Very Simple Action</title>
   </head>
