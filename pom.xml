@@ -9,13 +9,17 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<java-version>1.8</java-version>
-		<org.springframework-version>4.2.0.RELEASE</org.springframework-version>
+		<!-- <org.springframework-version>4.2.0.RELEASE</org.springframework-version> -->
+		<org.springframework-version>3.0.5.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
-		<org.slf4j-version>1.6.6</org.slf4j-version>
+<!-- 		<org.slf4j-version>1.6.6</org.slf4j-version> -->
 		<struts-version>2.3.32</struts-version>
+		<hibernate-version>3.6.10.Final</hibernate-version>
 
 	</properties>
 	<dependencies>
+
+
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
@@ -32,6 +36,24 @@
 			<artifactId>struts2-spring-plugin</artifactId>
 			<version>${struts-version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -60,11 +82,67 @@
 			<version>1.2</version>
 		</dependency>
 
-<!-- 		<dependency> -->
-<!-- 			<groupId>com.jgeppert.struts2.bootstrap</groupId> -->
-<!-- 			<artifactId>struts2-bootstrap-plugin</artifactId> -->
-<!-- 			<version>2.5.1</version> -->
-<!-- 		</dependency> -->
+		<!-- MySQL database driver -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.9</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jdbc</artifactId>
+			<version>8.5.6</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Hibernate core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate-version}</version>
+		</dependency>
+		<!-- Hibernate core library dependency start -->
+		<!-- <dependency> -->
+		<!-- <groupId>dom4j</groupId> -->
+		<!-- <artifactId>dom4j</artifactId> -->
+		<!-- <version>1.6.1</version> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>commons-logging</groupId> -->
+		<!-- <artifactId>commons-logging</artifactId> -->
+		<!-- <version>1.1.1</version> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>commons-collections</groupId> -->
+		<!-- <artifactId>commons-collections</artifactId> -->
+		<!-- <version>3.2.1</version> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>cglib</groupId> -->
+		<!-- <artifactId>cglib</artifactId> -->
+		<!-- <version>2.2</version> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>antlr</groupId> -->
+		<!-- <artifactId>antlr</artifactId> -->
+		<!-- <version>2.7.7</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.jgeppert.struts2.bootstrap</groupId> -->
+		<!-- <artifactId>struts2-bootstrap-plugin</artifactId> -->
+		<!-- <version>2.5.1</version> -->
+		<!-- </dependency> -->
 	</dependencies>
 
 	<build>
