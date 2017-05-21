@@ -1,1 +1,1 @@
-==Struts2 Boilerplate==
+# Struts2 Boilerplate

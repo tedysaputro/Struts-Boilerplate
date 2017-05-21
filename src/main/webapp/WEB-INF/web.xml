@@ -4,7 +4,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
          					http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>Struts 2 Boilerplate</display-name>
   <filter>
     <filter-name>struts2</filter-name>
     <filter-class>
@@ -20,8 +20,34 @@
 		<param-value>/WEB-INF/spring/applicationContext.xml</param-value>
 	</context-param>
 	
+<!-- 	SiteMesh -->
+<!-- 	 <context-param> -->
+<!--      <param-name>sitemesh.configfile</param-name> -->
+<!--      <param-value>/xml/sitemesh.xml</param-value> -->
+<!--    </context-param> -->
+<!-- 	<filter> -->
+<!-- 		<filter-name>sitemesh</filter-name> -->
+<!-- 		<filter-class>com.embeddednesia.struts.filter.PageFilter</filter-class> -->
+<!-- 	</filter> -->
+<!-- 	<filter-mapping> -->
+<!-- 		<filter-name>sitemesh</filter-name> -->
+<!-- 		<url-pattern>/*</url-pattern> -->
+<!-- 		<dispatcher>FORWARD</dispatcher> -->
+<!-- 	</filter-mapping> -->
+	
   <filter-mapping>
     <filter-name>struts2</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  
+   <!-- Restrict direct access to JSPs. 
+         For the security constraint to work, the auth-constraint
+         and login-config elements must be present -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>JSPs</web-resource-name>
+            <url-pattern>/jsp/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint/>
+    </security-constraint>
 </web-app>

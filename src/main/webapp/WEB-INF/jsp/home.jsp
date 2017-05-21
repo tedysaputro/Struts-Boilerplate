@@ -1,14 +1,18 @@
-<%@ taglib prefix="s" uri="/struts-tags" %>
-<%@ taglib prefix="sb" uri="/struts-bootstrap-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Very Simple Action</title>
-  </head>
+<head>
+<title>Very Simple Action</title>
 
-  <body>
-    <h1>Very Simple Action</h1>
 
-    <p>This is the JSP returned by the "success" result of the VerySimpleAction class.</p>
-  </body>
+</head>
+
+<body>
+	<h1>Very Simple Action</h1>
+
+	<p>This is the JSP returned by the "success" result of the
+		VerySimpleAction class.</p>
+	
+
+</body>
 </html>
