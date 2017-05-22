@@ -5,14 +5,14 @@
 <struts>
 
 	<package name="default" namespace="/" extends="struts-default">
-		<action name="home" class="com.embeddednesia.struts.action.HomeAction">
+		<action name="home" class="com.embeddednesia.struts.web.action.HomeAction">
 			<result>/WEB-INF/jsp/home.jsp</result>
 		</action>
 		<action name="login">
 			<result>/jsp/Login.jsp</result>
 
 		</action>
-		<action name="login_submit" class="com.embeddednesia.struts.action.LoginAction"
+		<action name="login_submit" class="com.embeddednesia.struts.web.action.LoginAction"
 			method="login">
 			<result name="input">/jsp/Login.jsp</result>
 

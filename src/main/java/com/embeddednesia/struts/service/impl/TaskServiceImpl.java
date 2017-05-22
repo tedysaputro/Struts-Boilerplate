@@ -1,4 +1,4 @@
-package com.embeddednesia.struts.impl;
+package com.embeddednesia.struts.service.impl;
 
 import java.util.List;
 

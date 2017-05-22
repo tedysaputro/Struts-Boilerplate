@@ -1,4 +1,4 @@
-package com.embeddednesia.struts.action;
+package com.embeddednesia.struts.web.action;
 
 
 import org.apache.commons.logging.Log;
