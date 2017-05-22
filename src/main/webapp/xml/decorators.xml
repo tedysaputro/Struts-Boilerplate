@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators/">     
+	<excludes>         
+		<pattern>/styles/*</pattern>         
+		<pattern>/scripts/*</pattern>         
+		<pattern>/images/*</pattern>
+		<pattern>/ajax/*</pattern>
+		<pattern>/jasper/*</pattern>
+		<pattern>/frame/*</pattern>		
+	</excludes>  
+	
+
+	<decorator name="front" page="front.jsp">         
+ 		<pattern>/sumsel/index/*</pattern>
+		<pattern>/jsp/retail/logout.jsp</pattern>		
+	</decorator>	
+	<decorator name="default" page="parent.jsp">         
+		<pattern>/*</pattern>		   
+	</decorator>	 	
+</decorators>
