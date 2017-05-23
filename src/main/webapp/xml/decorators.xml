@@ -11,8 +11,7 @@
 	
 
 	<decorator name="front" page="front.jsp">         
- 		<pattern>/sumsel/index/*</pattern>
-		<pattern>/jsp/retail/logout.jsp</pattern>		
+ 		<pattern>/jsp/index/*</pattern>
 	</decorator>	
 	<decorator name="default" page="parent.jsp">         
 		<pattern>/*</pattern>		   
